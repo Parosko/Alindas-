@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matriks 4x4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Matriks 4x4</h1>
+        <p style="text-align: center;">Metode Minor-Kofaktor dan Sarrus</p>
+        
+        <div class="matrix-input">
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td><input type="number" id="m11" placeholder="0"></td>
+                    <td><input type="number" id="m12" placeholder="0"></td>
+                    <td><input type="number" id="m13" placeholder="0"></td>
+                    <td><input type="number" id="m14" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="m21" placeholder="0"></td>
+                    <td><input type="number" id="m22" placeholder="0"></td>
+                    <td><input type="number" id="m23" placeholder="0"></td>
+                    <td><input type="number" id="m24" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="m31" placeholder="0"></td>
+                    <td><input type="number" id="m32" placeholder="0"></td>
+                    <td><input type="number" id="m33" placeholder="0"></td>
+                    <td><input type="number" id="m34" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="m41" placeholder="0"></td>
+                    <td><input type="number" id="m42" placeholder="0"></td>
+                    <td><input type="number" id="m43" placeholder="0"></td>
+                    <td><input type="number" id="m44" placeholder="0"></td>
+                </tr>
+            </table>
+        </div>
+        
+        <button id="calculate-btn">Hitung Determinan</button>
+        
+        <div class="loading" id="loading">Menghitung...</div>
+        
+        <div class="result-container" id="result-container" style="display: none;">
+            <h2 style="text-align: center;">Hasil Perhitungan</h2>
+            <div id="calculation-steps"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

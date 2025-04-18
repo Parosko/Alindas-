@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+.matrix-input {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.matrix-input input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    margin: 2px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.result-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.calculation-step {
+    margin-bottom: 30px;
+}
+
+.matrix-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.matrix-bracket {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 5px;
+    line-height: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.matrix-table {
+    border-collapse: collapse;
+    margin: 5px 0;
+}
+
+.matrix-table td {
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.highlight {
+    background-color: #ffeaa7;
+}
+
+.step-title {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.loading {
+    text-align: center;
+    display: none;
+}
+
+.sarrus-table {
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.sarrus-table td {
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.sarrus-table td:nth-child(4) {
+    border-left: 2px solid #999;
+}
+
+.diagonal-main {
+    background-color: #ffcccc;
+}
+
+.diagonal-secondary {
+    background-color: #cce5ff;
+}
+
+.calculation-detail {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.final-calculation {
+    background-color: #e6f7ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.cofactor-calculation {
+    background-color: #fff8e6;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
