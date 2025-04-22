@@ -5,14 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Matriks 4x4</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tambahan CSS agar judul dan layout lebih rapi */
+        .judul-utama {
+            text-align: center;
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .matrix-input table {
+            margin: 0 auto;
+        }
+
+        .matrix-input input {
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        #calculate-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #calculate-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .loading {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #999;
+            display: none;
+        }
+
+        .result-container {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Kalkulator Matriks 4x4</h1>
+        <!-- Judul utama halaman -->
+        <h1 class="judul-utama">Kalkulator Matriks 4x4</h1>
         <p style="text-align: center;">Metode Minor-Kofaktor dan Sarrus</p>
         
+        <!-- Bagian input matriks -->
         <div class="matrix-input">
-            <table style="margin: 0 auto;">
+            <table>
                 <tr>
                     <td><input type="number" id="m11" placeholder="0"></td>
                     <td><input type="number" id="m12" placeholder="0"></td>
@@ -40,10 +91,13 @@
             </table>
         </div>
         
+        <!-- Tombol hitung -->
         <button id="calculate-btn">Hitung Determinan</button>
         
+        <!-- Loading indikator -->
         <div class="loading" id="loading">Menghitung...</div>
         
+        <!-- Hasil perhitungan -->
         <div class="result-container" id="result-container" style="display: none;">
             <h2 style="text-align: center;">Hasil Perhitungan</h2>
             <div id="calculation-steps"></div>
