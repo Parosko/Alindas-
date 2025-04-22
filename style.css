@@ -1,4 +1,5 @@
 body {
+    /* Font dan layout utama */
     font-family: Arial, sans-serif;
     line-height: 1.6;
     max-width: 800px;
@@ -7,15 +8,18 @@ body {
 }
 
 h1, h2, h3 {
+    /* Warna untuk judul */
     color: #2c3e50;
 }
 
 .matrix-input {
+    /* Container input matriks */
     margin: 20px 0;
     text-align: center;
 }
 
 .matrix-input input {
+    /* Kotak input angka */
     width: 50px;
     height: 30px;
     text-align: center;
@@ -24,6 +28,7 @@ h1, h2, h3 {
 }
 
 button {
+    /* Tombol Hitung */
     background-color: #3498db;
     color: white;
     border: none;
@@ -35,6 +40,7 @@ button {
 }
 
 .result-container {
+    /* Container hasil perhitungan */
     margin-top: 30px;
     padding: 20px;
     background-color: #f9f9f9;
@@ -42,10 +48,12 @@ button {
 }
 
 .calculation-step {
+    /* Jarak antar langkah */
     margin-bottom: 30px;
 }
 
 .matrix-container {
+    /* Tampilan matriks dengan kurung */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +61,7 @@ button {
 }
 
 .matrix-bracket {
+    /* Kurung matriks */
     font-size: 1em;
     font-weight: bold;
     margin: 0 5px;
@@ -64,11 +73,13 @@ button {
 }
 
 .matrix-table {
+    /* Tabel matriks */
     border-collapse: collapse;
     margin: 5px 0;
 }
 
 .matrix-table td {
+    /* Sel tabel matriks */
     padding: 8px 12px;
     text-align: center;
     border: 1px solid #ddd;
@@ -76,10 +87,12 @@ button {
 }
 
 .highlight {
+    /* Sorotan pada elemen tertentu */
     background-color: #ffeaa7;
 }
 
 .step-title {
+    /* Judul langkah perhitungan */
     background-color: #3498db;
     color: white;
     padding: 8px 12px;
@@ -89,16 +102,19 @@ button {
 }
 
 .loading {
+    /* Indikator loading */
     text-align: center;
     display: none;
 }
 
 .sarrus-table {
+    /* Tabel untuk metode Sarrus */
     border-collapse: collapse;
     margin: 10px 0;
 }
 
 .sarrus-table td {
+    /* Sel tabel Sarrus */
     padding: 8px 12px;
     text-align: center;
     border: 1px solid #ddd;
@@ -106,23 +122,28 @@ button {
 }
 
 .sarrus-table td:nth-child(4) {
+    /* Garis batas tengah untuk visualisasi Sarrus */
     border-left: 2px solid #999;
 }
 
 .diagonal-main {
+    /* Highlight diagonal utama */
     background-color: #ffcccc;
 }
 
 .diagonal-secondary {
+    /* Highlight diagonal sekunder */
     background-color: #cce5ff;
 }
 
 .calculation-detail {
+    /* Detail perhitungan */
     margin: 10px 0;
     padding-left: 20px;
 }
 
 .final-calculation {
+    /* Bagian hasil akhir */
     background-color: #e6f7ff;
     padding: 15px;
     border-radius: 5px;
@@ -130,8 +151,16 @@ button {
 }
 
 .cofactor-calculation {
+    /* Perhitungan kofaktor */
     background-color: #fff8e6;
     padding: 15px;
     border-radius: 5px;
     margin: 10px 0;
+}
+
+.judul-utama {
+    text-align: center;
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
